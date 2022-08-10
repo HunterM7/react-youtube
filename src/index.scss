@@ -1,2 +1,11 @@
 @import './styles/normalize';
 @import './styles/vars';
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: $MainText;
+
+	background-color: $PrimaryDark;
+}

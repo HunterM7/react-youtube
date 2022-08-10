@@ -1,5 +1,103 @@
 //? == Header ==
+@import '../../styles/vars';
 
-.header__logo {
-	width: 100px;
+.header {
+	width: 100%;
+	height: 56px;
+
+	padding: 0 16px;
+
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	background-color: $PrimaryDark;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__main {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__burger {
+		width: 40px;
+		height: 40px;
+
+		margin-right: 16px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		svg {
+			font-size: 24px;
+		}
+	}
+
+	&__logo {
+		width: 90px;
+
+		svg {
+			width: 100%;
+		}
+	}
+
+	&__searchbar {
+		width: 100%;
+		max-width: 636px;
+		height: 40px;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		button:not(:last-of-type) {
+			padding: 8px;
+			margin-right: 8px;
+		}
+	}
+}
+
+.searchbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	input {
+		width: 100%;
+		height: 100%;
+
+		padding: 0 6px;
+
+		border-radius: 2px 0 0 2px;
+		border: 1px solid $Color-Gray-2;
+		border-right: 0px;
+		background-color: $Color-Gray-3;
+
+		&::placeholder {
+			color: $SecondaryText;
+		}
+	}
+
+	&__btn {
+		width: 64px;
+		height: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: 0 2px 2px 0;
+		border: 1px solid $Color-Gray-2;
+		background-color: $Color-Gray-1;
+	}
 }
