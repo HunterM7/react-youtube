@@ -1,0 +1,75 @@
+//? == VideoCard ==
+
+@import '../../styles/vars';
+
+.wrapper {
+}
+
+.preview {
+	width: 100%;
+
+	margin-bottom: 12px;
+
+	position: relative;
+
+	&__img {
+		width: 100%;
+		aspect-ratio: 16/9;
+		object-position: center;
+		object-fit: cover;
+	}
+
+	&__time {
+		font-size: 12px;
+		font-weight: 500;
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		margin: 4px;
+		padding: 3px 4px;
+
+		border-radius: 2px;
+		background-color: rgba($PrimaryDark, 0.8);
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+
+	&__avatar {
+		width: 36px;
+		aspect-ratio: 1/1;
+
+		flex-shrink: 0;
+
+		margin-right: 12px;
+	}
+
+	&__box {
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+
+		margin-bottom: 6px;
+	}
+
+	&__channel {
+		font-size: 12px;
+		font-weight: 400;
+		color: $Color-Gray-5;
+
+		margin-bottom: 6px;
+	}
+
+	&__viewsAndDate {
+		font-size: 12px;
+		font-weight: 400;
+		color: $Color-Gray-5;
+	}
+}
