@@ -1,5 +1,15 @@
 //? == Sidebar ==
 
+@import '../../styles/vars';
+
 .wrapper {
+}
+
+.firstBlock {
 	padding: 12px 0;
+}
+
+.divider {
+	height: 1px;
+	background-color: rgba($PrimaryLight, 0.1);
 }

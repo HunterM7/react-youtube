@@ -9,12 +9,15 @@ import styles from './Sidebar.module.scss'
 const Sidebar = () => {
 	return (
 		<div className={styles.wrapper}>
-			<SidebarRow selected Icon={HomeOutlinedIcon} title='Home' />
-			<SidebarRow Icon={ExploreOutlinedIcon} title='Trending' />
-			<SidebarRow
-				Icon={SubscriptionsOutlinedIcon}
-				title='Subscription'
-			/>
+			<div className={styles.firstBlock}>
+				<SidebarRow selected Icon={HomeOutlinedIcon} title='Home' />
+				<SidebarRow Icon={ExploreOutlinedIcon} title='Trending' />
+				<SidebarRow
+					Icon={SubscriptionsOutlinedIcon}
+					title='Subscription'
+				/>
+			</div>
+			<hr className={styles.divider} />
 		</div>
 	)
 }
