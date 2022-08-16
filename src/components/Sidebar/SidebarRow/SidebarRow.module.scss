@@ -1,0 +1,45 @@
+//? == SidebarRow ==
+
+@import '../../../styles/vars';
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	padding: 0 24px;
+
+	width: 100%;
+	height: 40px;
+
+	text-align: left;
+
+	&.selected {
+		background-color: $Color-Gray-4;
+	}
+
+	&:hover {
+		background-color: $Color-Gray-4;
+	}
+}
+
+.icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 24px;
+	height: 24px;
+
+	margin-right: 24px;
+
+	color: $PrimaryLight;
+}
+
+h2 {
+	width: 100%;
+
+	font-size: 14px;
+	font-weight: 400;
+}
