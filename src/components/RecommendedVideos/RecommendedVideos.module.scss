@@ -1,0 +1,14 @@
+//? == RecommendedVideos ==
+
+.title {
+	font-size: 20px;
+	font-weight: 400;
+
+	margin-bottom: 20px;
+}
+
+.videos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px 16px;
+}

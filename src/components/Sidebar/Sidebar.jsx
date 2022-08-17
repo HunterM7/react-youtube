@@ -17,8 +17,17 @@ const Sidebar = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.firstBlock}>
-				<SidebarRow selected Icon={HomeOutlinedIcon} title='Home' />
-				<SidebarRow Icon={ExploreOutlinedIcon} title='Trending' />
+				<SidebarRow
+					selected
+					Icon={HomeOutlinedIcon}
+					title='Home'
+					path='/'
+				/>
+				<SidebarRow
+					Icon={ExploreOutlinedIcon}
+					title='Trending'
+					path='trending'
+				/>
 				<SidebarRow
 					Icon={SubscriptionsOutlinedIcon}
 					title='Subscription'
@@ -26,8 +35,14 @@ const Sidebar = () => {
 			</div>
 			<hr className={styles.divider} />
 			<div className={styles.firstBlock}>
-				<SidebarRow Icon={VideoLibraryOutlinedIcon} title='Library' />
-				<SidebarRow Icon={RestoreOutlinedIcon} title='History' />
+				<SidebarRow
+					Icon={VideoLibraryOutlinedIcon}
+					title='Library'
+				/>
+				<SidebarRow
+					Icon={RestoreOutlinedIcon}
+					title='History'
+				/>
 				<SidebarRow
 					Icon={SmartDisplayOutlinedIcon}
 					title='Your videos'
@@ -36,8 +51,14 @@ const Sidebar = () => {
 					Icon={WatchLaterOutlinedIcon}
 					title='Watch later'
 				/>
-				<SidebarRow Icon={ThumbUpOutlinedIcon} title='Liked videos' />
-				<SidebarRow Icon={ExpandMoreOutlinedIcon} title='Show more' />
+				<SidebarRow
+					Icon={ThumbUpOutlinedIcon}
+					title='Liked videos'
+				/>
+				<SidebarRow
+					Icon={ExpandMoreOutlinedIcon}
+					title='Show more'
+				/>
 			</div>
 			<hr className={styles.divider} />
 		</div>

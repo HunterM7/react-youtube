@@ -6,21 +6,23 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
 import Avatar from '@mui/material/Avatar'
 
 import styles from './Header.module.scss'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+	const [searchValue, setSearchValue] = React.useState('')
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.header__main}>
 				<button
 					className={styles.header__burger}
-					onClick={() => console.log('Burger button clicked')}
+					onClick={() =>
+						console.log('Burger button clicked')
+					}
 				>
 					<MenuIcon />
 				</button>
-				<button
-					className={styles.header__logo}
-					onClick={() => console.log('Clicked YouTube logo')}
-				>
+				<NavLink to='/' className={styles.header__logo}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 1000 220'
@@ -43,7 +45,7 @@ const Header = () => {
 							fill='white'
 						/>
 					</svg>
-				</button>
+				</NavLink>
 			</div>
 			<div
 				className={`
@@ -51,10 +53,18 @@ const Header = () => {
 				${styles.searchbar}
 			`}
 			>
-				<input type='text' placeholder='Search' />
-				<button className={styles.searchbar__btn}>
+				<input
+					type='text'
+					placeholder='Search'
+					value={searchValue}
+					onChange={(e) => setSearchValue(e.target.value)}
+				/>
+				<NavLink
+					to={`search/${searchValue}`}
+					className={styles.searchbar__btn}
+				>
 					<SearchIcon />
-				</button>
+				</NavLink>
 			</div>
 			<div className={styles.header__buttons}>
 				<button>

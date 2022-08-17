@@ -1,18 +1,25 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import styles from './SidebarRow.module.scss'
 
-const SidebarRow = ({ title = 'no title', Icon, selected }) => {
+const SidebarRow = ({
+	title = 'no title',
+	Icon,
+	selected,
+	path = 'sss',
+}) => {
 	return (
-		<button
+		<NavLink
 			className={`
 			${styles.wrapper}
 			${selected && styles.selected}
 		`}
+			to={path}
 		>
 			<Icon className={styles.icon} />
 			<h2 className={styles.title}>{title}</h2>
-		</button>
+		</NavLink>
 	)
 }
 
