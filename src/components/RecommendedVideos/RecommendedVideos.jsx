@@ -11,7 +11,8 @@ const RecommendedVideos = () => {
 			channel: 'Jesse James West',
 			timestamp: '4 days ago',
 			videoDuration: '8:36',
-			avatar: '',
+			avatar:
+				'https://i.playboard.app/p/AATXAJyjFc7oq_aHBZgTcpKNgqbIvNE0U4HE9mAb5wCNdw/default.jpg',
 			preview:
 				'https://i.ytimg.com/vi/NY0JO8GAED8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRrGxNebtnEOgCPvvnFtSbWqfbHw',
 		},
@@ -21,7 +22,8 @@ const RecommendedVideos = () => {
 			channel: 'Clever Programmer',
 			timestamp: '2 years ago',
 			videoDuration: '3:39:54',
-			avatar: '',
+			avatar:
+				'https://cdn-images-1.medium.com/max/1200/1*dX5yfQ9E4ElBnzYjaS1Yzg.png',
 			preview:
 				'https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw',
 		},
@@ -31,7 +33,8 @@ const RecommendedVideos = () => {
 			channel: 'Jeff Nippard',
 			timestamp: '2 years ago',
 			videoDuration: '10:32',
-			avatar: '',
+			avatar:
+				'https://fitnessreaper.com/wp-content/uploads/2021/10/Jeff-Nippard-5.jpg',
 			preview:
 				'https://i.ytimg.com/vi/ytN366VCGls/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcKmPXnJQ06lclc_TRx4sNY_a3xQ',
 		},

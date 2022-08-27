@@ -1,0 +1,64 @@
+//? == ChannelCard ==
+
+@import '../../styles/vars';
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.avatar {
+	width: 100%;
+	max-width: 420px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&__img {
+		width: 136px !important;
+		height: 136px !important;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	max-width: 440px;
+
+	&__title {
+		font-size: 18px;
+		font-weight: 400;
+
+		margin-bottom: 8px;
+
+		position: relative;
+	}
+
+	&__nums {
+		font-size: 12px;
+		font-weight: 400;
+		color: $Color-Gray-5;
+
+		margin-bottom: 8px;
+	}
+
+	&__desc {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		color: $Color-Gray-5;
+	}
+}
+
+.verification {
+	width: 14px !important;
+	position: absolute;
+	top: 50%;
+	right: -18px;
+	transform: translateY(-50%);
+}

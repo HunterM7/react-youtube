@@ -7,14 +7,14 @@ const SidebarRow = ({
 	title = 'no title',
 	Icon,
 	selected,
-	path = 'sss',
+	path = '/',
 }) => {
 	return (
 		<NavLink
 			className={`
 			${styles.wrapper}
 			${selected && styles.selected}
-		`}
+			`}
 			to={path}
 		>
 			<Icon className={styles.icon} />
